@@ -1,0 +1,294 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: auto;
+  font-size: 20px;
+}
+
+
+.title{
+   color: #000;
+   font-family: "Great Vibes", cursive;
+   font-size: 80px;
+   line-height: 160px;
+   font-weight: normal;
+   margin-bottom: 0px;
+   margin-top: 40px;
+   text-align: center;
+   text-shadow: none;
+}
+
+p.description {
+   color: #000;
+   font-family: 'Great Vibes', sans-serif;
+   font-size: 30px;
+   line-height: 50px;
+   width: 400px;
+   position: relative;
+   text-align: center;
+}
+
+p.name {
+   color: #555;
+   font-family: "Great Vibes", cursive;
+   font-size: 22px;
+   line-height: 0px;
+   margin-top: 0px;
+   position: relative;
+   text-align: center;
+   
+}
+
+p.headline {
+   color: #555;
+   font-family: "Great Vibes", cursive;
+   font-size: 40px;
+   line-height: 0px;
+   margin-top: 0px;
+   position: relative;
+   text-align: center;
+   margin-top: 10px;
+}
+
+p.source {
+   color: #555;
+   font-family: 'Great Vibes', sans-serif;
+   font-size: 22px;
+   line-height: 15px;
+   margin-top: 0px;
+   position: relative;
+   text-align: center;
+}
+
+.controls-container {
+  min-width: 500px;
+  background-color: rgb(242, 242, 242);
+
+}
+
+.pad-only-sides {
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  width: auto;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+.slider-container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  position: relative;
+}
+.slider-container .slider-label {
+  font-weight: bold;
+  height: 30px;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+.slider-container .flex {
+  width: 100%;
+}
+.slider-container .text-input-slider {
+  margin-left: 10px;
+  width: 50px;
+}
+.slider-container .range-input-slider {
+  -webkit-appearance: none;
+  margin: 12.3px 0;
+  padding-right: 0px;
+  width: 100%;
+}
+.slider-container .range-input-slider:focus {
+  outline: none;
+}
+.slider-container .range-input-slider::-webkit-slider-runnable-track {
+  background: #000;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  cursor: pointer;
+  height: 8.4px;
+  width: 100%;
+}
+.slider-container .range-input-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 14px;
+  cursor: pointer;
+  height: 33px;
+  margin-top: -12.5px;
+  width: 42px;
+}
+.slider-container .range-input-slider:focus::-webkit-slider-runnable-track {
+}
+.slider-container .range-input-slider::-moz-range-track {
+  background: #000;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  cursor: pointer;
+  height: 8.4px;
+  width: 100%;
+}
+.slider-container .range-input-slider::-moz-range-thumb {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 14px;
+  cursor: pointer;
+  height: 33px;
+  width: 42px;
+}
+
+.rv-xy-plot__grid-lines__line {
+  stroke:#e6e6e9
+}
+
+.Select {
+    position: relative;
+}
+
+.Select-control {
+    background-color: #fff;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: default;
+    display: table;
+    border-spacing: 0;
+    border-collapse: separate;
+    height: 50px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Select-input {
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.Select-input>input {
+    width: 100%;
+    background: none transparent;
+    border: 0 none;
+    box-shadow: none;
+    cursor: default;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    outline: none;
+    line-height: 17px;
+    padding: 8px 0 12px;
+    -webkit-appearance: none;
+}
+
+.Select-control>:last-child {
+    padding-right: 5px;
+}
+
+.select-wrapper {
+  display: inline-block;
+  text-align: center;
+
+}
+
+.select-custom-class .Select-multi-value-wrapper {
+  padding-right: 20px;
+}
+
+.select-custom-class .Select-menu-outer {
+  text-align: left;
+  font-size: 30px;
+}
+
+.Select--single>.Select-control .Select-value, .Select-placeholder {
+    bottom: 0;
+    color: #000000;
+    left: 0;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.Select-control, .Select-clear-zone, .Select-arrow-zone {
+  display: inherit;
+}
+
+.Select-clear-zone {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.Select-arrow-zone {
+    cursor: pointer;
+    display: table-cell;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+    padding-right: 5px;
+    right: 20%;
+    top: 20%;
+}
+
+.Select-arrow {
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 2.5px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: relative;
+}
+
+.custom-select{
+  font-size: 30px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: auto;
+  font-size: 25px;
+}
